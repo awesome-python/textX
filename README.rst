@@ -1,4 +1,4 @@
-.. image:: https://raw.githubusercontent.com/igordejanovic/textX/master/art/textX-logo.png
+.. image:: https://raw.githubusercontent.com/textX/textX/master/art/textX-logo.png
 
 |pypi-badge| |license| |build-status| |docs|
 
@@ -109,7 +109,7 @@ Support in IDE/editors
   Language Server Protocol support for any textX based language
 - `textX-extensions <https://github.com/textX-tools/textX-extensions>`_ - syntax
   highlighting, code outline for Visual Studio Code
-- `textx.vim <https://github.com/igordejanovic/textx.vim/>`_ -
+- `textx.vim <https://github.com/textX/textx.vim/>`_ -
   Highlighting and outline of textX grammars
 - `textx-mode <https://github.com/novakboskov/textx-mode>`_ -
   Emacs mode for textX grammars
@@ -122,7 +122,7 @@ For general questions and help please use `StackOverflow
 `textx` tag.
 
 For issues, suggestions and feature request please use 
-`GitHub issue tracker <https://github.com/igordejanovic/textX/issues>`_.
+`GitHub issue tracker <https://github.com/textX/textX/issues>`_.
 
 
 License
@@ -136,7 +136,7 @@ Python versions
 Tested for 2.7, 3.3+
 
 
-.. _Arpeggio: https://github.com/igordejanovic/Arpeggio
+.. _Arpeggio: https://github.com/textX/Arpeggio
 .. _Xtext: http://www.eclipse.org/Xtext/
 
 .. |pypi-badge| image:: https://img.shields.io/pypi/v/textX.svg

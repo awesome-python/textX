@@ -2,25 +2,25 @@
 
 * 2018-10-06 Release 1.8.0
 
-   - https://github.com/igordejanovic/textX/pull/71
+   - https://github.com/textX/textX/pull/71
      - Regular expression with group support
      - See [the
        docs](http://www.igordejanovic.net/textX/development/grammar/#matches)
        for usage.
-   - https://github.com/igordejanovic/textX/pull/69
+   - https://github.com/textX/textX/pull/69
      - Added search path feature (issue #66) - search path support for model 
        files (importURI scope providers; see docs/scoping.md).
-   - https://github.com/igordejanovic/textX/pull/77
+   - https://github.com/textX/textX/pull/77
      - New multi meta model support for references-only for better meta model
        modularity (referencing models without having access to the grammar, 
        see docs/multimetamodel.md).
-   - https://github.com/igordejanovic/textX/pull/79
+   - https://github.com/textX/textX/pull/79
      - Fixing obj_processors calling.
-   - https://github.com/igordejanovic/textX/pull/84
+   - https://github.com/textX/textX/pull/84
      - New contribution guide.
-   - https://github.com/igordejanovic/textX/pull/81
+   - https://github.com/textX/textX/pull/81
      - Bugfix: lost encoding for multi meta-model.
-   - https://github.com/igordejanovic/textX/pull/68
+   - https://github.com/textX/textX/pull/68
      - changed parser access in metamodel (private attribute "_parser")
    - mkdocs documentation now uses [mike](https://github.com/jimporter/mike) for
      multiversion support.
@@ -28,9 +28,9 @@
 * 2018-07-02 Release 1.7.1
 
    - Fixed bug with obj. processor call.
-     https://github.com/igordejanovic/textX/issues/72
+     https://github.com/textX/textX/issues/72
    - Fixed bug with `pos_to_linecol` in the context of multi-file models.
-     https://github.com/igordejanovic/textX/issues/67
+     https://github.com/textX/textX/issues/67
    - More tests.
    - Thanks goto40@GitHub for the above fixes/tests.
 

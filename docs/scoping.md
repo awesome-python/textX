@@ -32,7 +32,7 @@ parts of rules:
  * or: `my_meta_model.register_scope_providers({"*.ref": scoping.providers.FQN()})`
  * or: `my_meta_model.register_scope_providers({"MyAttribute.*": scoping.providers.FQN()})`
 
-Example (from [tests/test_scoping/test_local_scope.py](https://github.com/igordejanovic/textX/blob/master/tests/functional/test_scoping/test_local_scope.py)):
+Example (from [tests/test_scoping/test_local_scope.py](https://github.com/textX/textX/blob/master/tests/functional/test_scoping/test_local_scope.py)):
 
     # Grammar snippet (Components.tx)
     Component:
@@ -80,7 +80,7 @@ We provide some standard scope providers:
    textX.
  * `textx.scoping.providers.FQN`: This is a **provider similar to Java or Xtext
    name loopup**.
-   Example: see [tests/test_scoping/test_full_qualified_name.py](https://github.com/igordejanovic/textX/blob/master/tests/functional/test_scoping/test_full_qualified_name.py).
+   Example: see [tests/test_scoping/test_full_qualified_name.py](https://github.com/textX/textX/blob/master/tests/functional/test_scoping/test_full_qualified_name.py).
  * `textx.scoping.providers.ImportURI`: This a provider which **allows to load
    additional modules** for lookup.
    You need to define a rule with an attribute `importURI` as string (like in
@@ -90,7 +90,7 @@ We provide some standard scope providers:
    Model objects formed by the rules with an `importURI` attribute get an
    additional attribute `_tx_loaded_models` which is a list of the loaded
    models by this rule instance.
-   Example: see [tests/test_scoping/test_import_module.py](https://github.com/igordejanovic/textX/blob/master/tests/functional/test_scoping/test_import_module.py).
+   Example: see [tests/test_scoping/test_import_module.py](https://github.com/textX/textX/blob/master/tests/functional/test_scoping/test_import_module.py).
     - `FQNImportURI` (decorated scope provider)
     - `PlainNameImportURI` (decorated scope provider)
 
@@ -101,12 +101,12 @@ We provide some standard scope providers:
    In this case globbing is not allowed and is disabled (reason: it is
    unclear if the user wants to glob over all search path entries or to stop
    after the first match).
-   Example: see [tests/test_scoping/test_import_module_search_path_issue66.py](https://github.com/igordejanovic/textX/blob/master/tests/functional/test_scoping/test_import_module_search_path_issue66.py).
+   Example: see [tests/test_scoping/test_import_module_search_path_issue66.py](https://github.com/textX/textX/blob/master/tests/functional/test_scoping/test_import_module_search_path_issue66.py).
  * `textx.scoping.providers.GlobalRepo`: This is a provider where **you initially
    need to specifiy the model files to be loaded and used for lookup**. Like
    for `ImportURI` you need to provide another scope provider for the concrete
    lookup.
-   Example: see [tests/test_scoping/test_global_import_modules.py](https://github.com/igordejanovic/textX/blob/master/tests/functional/test_scoping/test_global_import_modules.py).
+   Example: see [tests/test_scoping/test_global_import_modules.py](https://github.com/textX/textX/blob/master/tests/functional/test_scoping/test_global_import_modules.py).
     - `textx.scoping.providers.FQNGlobalRepo` (decorated scope provider)
     - `textx.scoping.providers.PlainNameGlobalRepo` (decorated scope provider)
  * `textx.scoping.providers.RelativeName`: This is a scope provider to **resolve
@@ -114,10 +114,10 @@ We provide some standard scope providers:
    class associated with the model-instance. Typically, another reference (the
    reference to the model-class of a model-instance) is used to determine the
    concrete referenced object (e.g. the model-method, owned by a model-class).
-   Example: see [tests/test_scoping/test_local_scope.py](https://github.com/igordejanovic/textX/blob/master/tests/functional/test_scoping/test_local_scope.py).
+   Example: see [tests/test_scoping/test_local_scope.py](https://github.com/textX/textX/blob/master/tests/functional/test_scoping/test_local_scope.py).
  * `textx.scoping.providers.ExtRelativeName`: The same as `RelativeName` **allowing
    to model inheritance or chained lookups**.
-   Example: see [tests/test_scoping/test_local_scope.py](https://github.com/igordejanovic/textX/blob/master/tests/functional/test_scoping/test_local_scope.py).
+   Example: see [tests/test_scoping/test_local_scope.py](https://github.com/textX/textX/blob/master/tests/functional/test_scoping/test_local_scope.py).
 
 
 ### Note on Uniqueness of Model Elements
@@ -132,7 +132,7 @@ instance of a `GlobalModelRepository` as a base for all loaded models.
 Model elements in models including other parts of the model (possibly circular)
 have unique model elements (no double instances).
 
-Examples see [tests/test_scoping/test_import_module.py](https://github.com/igordejanovic/textX/blob/master/tests/functional/test_scoping/test_import_module.py).
+Examples see [tests/test_scoping/test_import_module.py](https://github.com/textX/textX/blob/master/tests/functional/test_scoping/test_import_module.py).
 
 
 ## Technical aspects and implementation details
